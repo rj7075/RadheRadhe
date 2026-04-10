@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/pg1.jp"
+          src="/pg1.jpg"
           alt="PG in Gurgaon near Subhash Chowk and Sohna Road"
           className="w-full h-full object-cover"
         />
