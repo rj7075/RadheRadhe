@@ -79,7 +79,7 @@ export default async function Page({ searchParams }) {
           {/* RIGHT IMAGE */}
           <div className="relative">
             <img
-              src="/pg1.jpg"
+              src="/img3.jpg"
               alt="PG in Gurgaon"
               className="rounded-2xl shadow-2xl w-full h-[260px] sm:h-[320px] md:h-[400px] object-cover"
             />
@@ -178,7 +178,7 @@ export default async function Page({ searchParams }) {
     {/* 🔥 RIGHT IMAGE */}
     <div className="relative order-2">
       <img
-        src="/pg2.jpg"
+        src="/img4.jpg"
         alt="PG rooms in Gurgaon"
         className="rounded-2xl shadow-2xl w-full h-[260px] sm:h-[320px] md:h-[400px] object-cover"
       />

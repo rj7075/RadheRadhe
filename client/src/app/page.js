@@ -67,11 +67,12 @@ export default function Home() {
 
       {/* 🔥 SEO CONTENT */}
       <section className="bg-black py-12 md:py-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-950" />
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-950" />
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-cyan-500/10 to-indigo-500/20" />
 
+      
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-blue-500/20 blur-3xl rounded-full" /> */}
       {/* Glow Effect */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-blue-500/20 blur-3xl rounded-full" />
         <div className="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-10 items-center">
 
           {/* LEFT */}
@@ -127,7 +128,7 @@ export default function Home() {
           {/* RIGHT IMAGE */}
           <div className="relative">
             <img
-              src="/pg1.jpg"
+              src="/img1.jpg"
               alt="Premium PG in Gurgaon"
               className="rounded-2xl shadow-2xl w-full h-[260px] sm:h-[320px] md:h-[400px] object-cover"
             />

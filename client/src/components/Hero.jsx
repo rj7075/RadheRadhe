@@ -7,14 +7,14 @@ export default function Hero() {
     <section className="relative w-full min-h-[100vh] flex items-center  justify-center text-center text-white overflow-hidden px-3 sm:px-4">
       
       {/* 🔥 Background */}
-      {/* <div className="absolute inset-0">
+      <div className="absolute inset-0">
         <img
-          src="/hero.png"
+          src="/img5.jpg"
           alt="PG in Gurgaon near Subhash Chowk and Sohna Road"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/70 sm:bg-black/60 backdrop-blur-[2px]" />
-      </div> */}
+      </div>
 
       {/* 🔥 Content */}
       <div className="relative z-10 w-full max-w-5xl mx-auto py-8 sm:py-14">
