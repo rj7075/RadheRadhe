@@ -4,6 +4,7 @@ import Filters from "@/components/Filters";
 import WhyUs from "@/components/WhyUs";
 import CTASection from "@/components/CTASection";
 import pgs from "@/data/pgs.json";
+import { Suspense } from "react";
 
 
 export const metadata = {
@@ -19,9 +20,9 @@ export default function Home() {
       {/* 🔥 HERO */}
       <Hero />
       {/* 🔥 FILTERS */}
-      <div className="flex justify-center pt-6">
-        <Filters />
-      </div>
+       <Suspense fallback={<div>Loading filters...</div>}>
+    <Filters />
+  </Suspense>
 
       {/* 🔥 FEATURED LISTINGS */}
       <section className="p-4 md:px-10 mt-4">
