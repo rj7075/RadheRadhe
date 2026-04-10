@@ -4,10 +4,7 @@ import Filters from "@/components/Filters";
 import WhyUs from "@/components/WhyUs";
 import CTASection from "@/components/CTASection";
 import pgs from "@/data/pgs.json";
-import { FaCheckCircle } from "react-icons/fa";
-import { MdOutlineVerifiedUser } from "react-icons/md";
-import { FiZap } from "react-icons/fi";
-import { HiOutlineHomeModern } from "react-icons/hi2";
+
 
 export const metadata = {
   title: "Best PG in Gurgaon | Boys, Girls & Unisex PG Near Sohna Road",
@@ -91,7 +88,6 @@ export default function Home() {
 
       {/* 🔥 FINAL CTA (STRONG CLOSE) */}
       <CTASection />
-
     </main>
   );
 }
