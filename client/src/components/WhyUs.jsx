@@ -1,55 +1,52 @@
+import { MdVerified } from "react-icons/md";
+import { FaMoneyBillWave } from "react-icons/fa";
+import { FiZap } from "react-icons/fi";
+
 export default function WhyUs() {
   const features = [
     {
-      title: "Verified PG in Gurgaon",
-      desc: "All PG listings near Sohna Road, Sector 48, and Badshahpur are verified with real photos and accurate details.",
-      icon: "✅",
+      title: "Verified PG Listings",
+      desc: "Find trusted PG in Gurgaon near Sohna Road, Sector 48 & Badshahpur with real photos.",
+      icon: <MdVerified className="text-blue-600 text-3xl" />,
     },
     {
-      title: "No Brokerage PG",
-      desc: "Book PG accommodations in Gurgaon directly without paying any brokerage or hidden charges.",
-      icon: "💸",
+      title: "Zero Brokerage",
+      desc: "Book PG directly without paying extra charges. 100% transparent pricing.",
+      icon: <FaMoneyBillWave className="text-green-600 text-3xl" />,
     },
     {
-      title: "Instant PG Booking",
-      desc: "Find and book PG near Genpact, Subhash Chowk, and Vatika Chowk instantly with a smooth process.",
-      icon: "⚡",
+      title: "Instant Booking",
+      desc: "Quickly book PG near Genpact & Subhash Chowk with a smooth process.",
+      icon: <FiZap className="text-yellow-500 text-3xl" />,
     },
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
+    <section className="bg-gradient-to-b from-white to-gray-50 py-12">
+      <div className="max-w-7xl mx-auto px-4 text-center">
 
-        {/* 🔥 SEO Heading */}
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
           Why Choose Our PG in Gurgaon?
         </h2>
 
-        {/* 🔥 Subtext */}
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          Discover the best PG accommodations in Gurgaon near Sohna Road, Sector 48,
-          Badshahpur, and nearby areas with verified listings, zero brokerage,
-          and instant booking options.
+          Discover verified PG accommodations near Sohna Road, Sector 48,
+          and Badshahpur with zero brokerage and premium amenities.
         </p>
 
-        {/* 🔥 Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {features.map((item, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1"
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition hover:-translate-y-1"
             >
-              {/* Icon */}
-              <div className="text-3xl mb-3">{item.icon}</div>
+              <div className="mb-4 flex justify-center">{item.icon}</div>
 
-              {/* Title */}
               <h3 className="text-lg font-semibold mb-2">
                 {item.title}
               </h3>
 
-              {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm">
                 {item.desc}
               </p>
             </div>
