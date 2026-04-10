@@ -2,32 +2,49 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function CTASection() {
   return (
-    <section className="relative py-14 text-center text-white">
-      
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500" />
-      <div className="absolute inset-0 bg-black/20" />
+    <section className="relative py-16 text-white overflow-hidden">
 
-      <div className="relative z-10 max-w-3xl mx-auto px-4">
+      {/* 🔥 Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-950" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-cyan-500/20 to-indigo-500/30" />
 
-        <h2 className="text-2xl md:text-4xl font-bold">
-          Find Your Perfect PG in Gurgaon Today
+      {/* Glow Effect */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-blue-500/30 blur-3xl rounded-full" />
+
+      {/* 🔥 Content */}
+      <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
+
+        {/* Heading */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
+          Find Your Perfect{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            PG in Gurgaon
+          </span>{" "}
+          Today
         </h2>
 
-        <p className="mt-3 text-gray-100">
-          Get verified PG near Sohna Road, Sector 48 & Genpact with food & zero brokerage.
+        {/* Subtext */}
+        <p className="mt-4 text-gray-300 text-sm sm:text-base">
+          Stay directly with owner near{" "}
+          <span className="text-blue-400">Sohna Road</span>,{" "}
+          <span className="text-green-400">Sector 48</span> &{" "}
+          <span className="text-yellow-400">Genpact</span>.  
+          No brokerage • Verified rooms • Instant booking.
         </p>
 
+        {/* 🔥 CTA BUTTON */}
         <a
-          href="https://wa.me/919000000000"
+          href="https://wa.me/919838692186"
           target="_blank"
-          className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold mt-6 shadow-lg hover:scale-105 transition"
+          className="inline-flex items-center justify-center gap-3 mt-7 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
         >
-          <FaWhatsapp className="text-green-500 text-xl" />
+          <FaWhatsapp className="text-xl" />
           Chat on WhatsApp
         </a>
 
-        <p className="text-xs text-gray-200 mt-4">
-          Instant response • 100% Free Assistance
+        {/* Trust Line */}
+        <p className="text-xs text-gray-400 mt-4">
+          ⚡ Instant response • 100% Free • Direct Owner Support
         </p>
 
       </div>

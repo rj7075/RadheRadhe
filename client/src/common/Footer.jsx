@@ -1,61 +1,84 @@
-// /components/Footer.jsx
 "use client";
 
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-8">
-
-        {/* 🏠 Brand */}
+    <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-300">
+      
+      {/* 🔥 TOP SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
+        
+        {/* 🏠 BRAND */}
         <div>
-          <h2 className="text-white text-2xl font-bold">PG Finder</h2>
-          <p className="mt-3 text-sm">
-            Find affordable and comfortable PG accommodations across India.
-            Trusted by students & professionals.
+          <h2 className="text-2xl font-bold text-white">
+            Radhe Radhe PG
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-gray-400">
+            Find verified and affordable PG in Gurgaon near Sohna Road, Sector 48 
+            & Badshahpur. Comfortable stays for boys, girls & working professionals 
+            with zero brokerage.
           </p>
         </div>
 
-        {/* 🔗 Quick Links */}
+        {/* 🔗 QUICK LINKS */}
         <div>
-          <h3 className="text-white font-semibold mb-3">Quick Links</h3>
+          <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+            <li><Link href="/pg" className="hover:text-white transition">Browse PG</Link></li>
+            <li><Link href="/about" className="hover:text-white transition">About Us</Link></li>
+            <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
           </ul>
         </div>
 
-        {/* 📍 Popular Cities (SEO BOOST) */}
+        {/* 📍 SEO LOCATIONS */}
         <div>
-          <h3 className="text-white font-semibold mb-3">Popular Cities</h3>
+          <h3 className="text-white font-semibold mb-4">Popular Areas</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/city/gurgaon">PG in Gurgaon</Link></li>
-            <li><Link href="/city/delhi">PG in Delhi</Link></li>
-            <li><Link href="/city/noida">PG in Noida</Link></li>
+            <li><Link href="/pg?location=sohna-road" className="hover:text-white">PG near Sohna Road</Link></li>
+            <li><Link href="/pg?location=sector-48" className="hover:text-white">PG in Sector 48 Gurgaon</Link></li>
+            <li><Link href="/pg?location=badshahpur" className="hover:text-white">PG in Badshahpur</Link></li>
+            <li><Link href="/pg?location=subhash-chowk" className="hover:text-white">PG near Subhash Chowk</Link></li>
           </ul>
         </div>
 
-        {/* 📞 Contact + Social */}
+        {/* 📞 CONTACT + SOCIAL */}
         <div>
-          <h3 className="text-white font-semibold mb-3">Contact</h3>
-          <p className="text-sm">📍 Gurgaon, India</p>
-          <p className="text-sm">📞 +91 9876543210</p>
-          <p className="text-sm">✉️ support@pgfinder.com</p>
+          <h3 className="text-white font-semibold mb-4">Contact Us</h3>
 
-          <div className="flex gap-4 mt-4 text-lg">
-            <FaFacebook className="hover:text-white cursor-pointer" />
-            <FaInstagram className="hover:text-white cursor-pointer" />
-            <FaTwitter className="hover:text-white cursor-pointer" />
+          <div className="space-y-3 text-sm">
+            <p className="flex items-center gap-2">
+              <FaPhoneAlt /> 
+              <a href="tel:9838692186" className="hover:text-white">
+                9838692186
+              </a>
+            </p>
+
+            <p className="flex items-center gap-2">
+              <MdEmail />
+              <a href="mailto:rj7075yadav@gmail.com" className="hover:text-white">
+                rj7075yadav@gmail.com
+              </a>
+            </p>
+
+            <p>📍 Gurgaon, Haryana</p>
+          </div>
+
+          {/* SOCIAL */}
+          <div className="flex gap-4 mt-5 text-lg">
+            <FaFacebook className="hover:text-white cursor-pointer transition" />
+            <FaInstagram className="hover:text-white cursor-pointer transition" />
+            <FaTwitter className="hover:text-white cursor-pointer transition" />
           </div>
         </div>
       </div>
 
-      {/* 🔻 Bottom Bar */}
-      <div className="border-t border-gray-700 text-center py-4 text-sm">
-        © {new Date().getFullYear()} PG Finder. All rights reserved.
+      {/* 🔻 BOTTOM BAR */}
+      <div className="border-t border-gray-800 text-center py-5 text-sm text-gray-400">
+        © {new Date().getFullYear()} Rao Ranjeet Yadav. All rights reserved.
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 
 
-import AboutContent from "@/common/  AboutContent";
-import AboutHero from "@/common/  AboutHero";
+
+import AboutContent from "@/common/About";
 import CTASection from "@/components/CTASection";
 
 
@@ -14,8 +14,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="bg-gray-50">
-      <AboutHero/>
-       <AboutContent/>
+      <AboutContent/>
       <CTASection/>
     </main>
   );
