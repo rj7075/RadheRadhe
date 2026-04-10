@@ -94,7 +94,7 @@
     "amenities": ["WiFi", "Fan", "Shared Kitchen"],
     "latitude": 28.6519,
     "longitude": 77.1909,
-    "images": ["/pg1.jpg", "/pg2.jpg","pg3.jpg","pg4.jpg"],
+    "images": ["/pg1.jpg", "/pg2.jpg","/pg3.jpg","/pg4.jpg"],
     "description": "Affordable PG option for students and working professionals.",
     "phone": "9000000001",
     "rating": 4.5,

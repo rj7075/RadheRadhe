@@ -33,7 +33,7 @@ export default function Home() {
       <WhyUs />
 
       {/* 🔥 CTA */}
-      <CTASection />
+      
 
       {/* 🔥 ALL PGs */}
       {/* <section className="p-4 md:px-10 pb-10">
@@ -55,6 +55,7 @@ export default function Home() {
           with zero brokerage.
         </p>
       </section>
+      <CTASection />
     </main>
   );
 }

@@ -1,101 +1,87 @@
+import data from "@/data/pgs.json";
 import PGList from "@/components/PGList";
-import pgs from "@/data/pgs.json";
+import Filters from "@/components/Filters";
 
-export const metadata = {
-  title: "PG in Gurgaon & Delhi | Affordable Boys & Girls PG",
-  description:
-    "Find verified PG accommodations in Gurgaon & Delhi. Affordable rent, food included, no brokerage. Book instantly.",
-};
+export default async function Page({ searchParams }) {
+  const params = await searchParams;
 
-export default function Pg() {
-  const total = pgs.length;
+  const gender = params?.gender;
+
+  let filteredPGs = data;
+
+  if (gender) {
+    filteredPGs = data.filter(
+      (pg) => pg.gender.toLowerCase() === gender.toLowerCase()
+    );
+  }
 
   return (
-    <main className="bg-gray-50 min-h-screen">
-      
-      {/* 🔥 HERO SECTION */}
-      <section className="bg-white p-6 md:p-10 text-center border-b">
-        <h1 className="text-2xl md:text-4xl font-bold">
-          Find the Best PG in Gurgaon & Delhi
-        </h1>
-        <p className="text-gray-600 mt-2">
-          Verified PGs • No Brokerage • Instant Booking
-        </p>
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-6">
 
-        {/* Trust badges */}
-        <div className="flex justify-center gap-4 mt-4 flex-wrap text-sm">
-          <span className="bg-green-100 text-green-700 px-3 py-1 rounded">
-            ✅ Verified Listings
+      {/* 🔥 SEO HEADING */}
+      <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-3">
+        {gender
+          ? `${gender} PG in Gurgaon near Sohna Road & Sector 48`
+          : "Best PG in Gurgaon near Sohna Road, Sector 48 & Badshahpur"}
+      </h1>
+
+      {/* 🔥 SEO DESCRIPTION */}
+      <p className="text-gray-600 max-w-3xl mb-6">
+        Find fully furnished PG accommodations in Gurgaon near{" "}
+        <strong>Genpact, Badshahpur, Vatika Chowk, Subhash Chowk, Sector 48, and Sector 69</strong>.  
+        Enjoy modern amenities like WiFi, food, AC rooms, and zero brokerage.  
+        Perfect for working professionals and students looking for affordable and premium PG options.
+      </p>
+
+      {/* 🔥 FILTERS */}
+      <Filters />
+
+      {/* 🔥 LOCATION CHIPS (SEO BOOST + UX) */}
+      <div className="flex flex-wrap gap-3 mb-8">
+        {[
+          "PG near Genpact Gurgaon",
+          "PG in Badshahpur Gurgaon",
+          "PG near Vatika Chowk",
+          "PG near Subhash Chowk",
+          "PG in Sector 48 Gurgaon",
+          "PG in Sector 69 Gurgaon",
+        ].map((loc, i) => (
+          <span
+            key={i}
+            className="bg-gray-100 hover:bg-blue-50 text-gray-700 px-4 py-2 rounded-full text-sm cursor-pointer transition"
+          >
+            {loc}
           </span>
-          <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded">
-            💸 No Brokerage
-          </span>
-          <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded">
-            ⚡ Instant Booking
-          </span>
-        </div>
-      </section>
+        ))}
+      </div>
 
-      {/* 🔥 FILTER BAR (UI ONLY FOR NOW) */}
-      <section className="p-4 md:px-10 flex flex-wrap gap-3 items-center justify-between">
-        <div className="flex gap-2 flex-wrap">
-          <button className="px-4 py-2 bg-white border rounded hover:bg-gray-100 text-sm">
-            All
-          </button>
-          <button className="px-4 py-2 bg-white border rounded hover:bg-gray-100 text-sm">
-            Boys
-          </button>
-          <button className="px-4 py-2 bg-white border rounded hover:bg-gray-100 text-sm">
-            Girls
-          </button>
-          <button className="px-4 py-2 bg-white border rounded hover:bg-gray-100 text-sm">
-            With Food
-          </button>
-          <button className="px-4 py-2 bg-white border rounded hover:bg-gray-100 text-sm">
-            Under ₹8000
-          </button>
-        </div>
+      {/* 🔥 RESULT HEADING */}
+      <h2 className="text-xl font-semibold mb-4">
+        {gender ? `${gender} PG Options` : "Available PG Options"}
+      </h2>
 
-        {/* Results count */}
-        <p className="text-sm text-gray-600">
-          {total} PGs available
-        </p>
-      </section>
+      {/* 🔥 PG LIST */}
+      <PGList pgs={filteredPGs} />
 
-      {/* 🔥 LISTING */}
-      <section className="p-4 md:px-10 pb-10">
-        <PGList pgs={pgs} />
-      </section>
+      {/* 🔥 SEO CONTENT BLOCK */}
+      <div className="mt-12 max-w-4xl">
+        <h3 className="text-xl font-semibold mb-3">
+          PG Accommodation in Gurgaon – Sohna Road & Nearby Areas
+        </h3>
 
-      {/* 🔥 CTA BANNER */}
-      <section className="bg-blue-600 text-white text-center p-6">
-        <h2 className="text-xl font-semibold">
-          Can't find the perfect PG?
-        </h2>
-        <p className="text-sm mt-1">
-          Talk to our expert & get personalized recommendations
+        <p className="text-gray-600 leading-relaxed">
+          Gurgaon has become a hub for professionals working in companies like Genpact and other IT firms. 
+          Areas like <strong>Badshahpur, Sector 48, Sector 69, Vatika Chowk, and Subhash Chowk</strong> 
+          are highly preferred due to connectivity, affordability, and availability of quality PG accommodations.
         </p>
 
-        <a
-          href="https://wa.me/919000000000"
-          className="inline-block bg-white text-blue-600 px-6 py-2 rounded mt-4 font-semibold"
-        >
-          Contact on WhatsApp
-        </a>
-      </section>
-
-      {/* 🔥 SEO CONTENT */}
-      <section className="p-6 md:px-10 bg-white">
-        <h2 className="text-lg font-semibold">
-          PG in Gurgaon & Delhi
-        </h2>
-        <p className="text-sm text-gray-600 mt-2">
-          Looking for affordable PG accommodation in Gurgaon or Delhi? 
-          We provide verified listings with modern amenities like WiFi, food, 
-          AC, and laundry. Choose from boys and girls PG options near metro 
-          stations, offices, and markets.
+        <p className="text-gray-600 mt-3 leading-relaxed">
+          Whether you are looking for a boys PG, girls PG, or unisex PG in Gurgaon, you can find multiple options 
+          with modern facilities such as food, WiFi, housekeeping, and security. These locations are well connected 
+          to Sohna Road and major business hubs, making them ideal for daily commute.
         </p>
-      </section>
-    </main>
+      </div>
+
+    </div>
   );
 }
