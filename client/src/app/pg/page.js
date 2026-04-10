@@ -54,6 +54,8 @@ export default async function Page({ searchParams }) {
     "PG in Badshahpur Gurgaon",
     "PG near Subhash Chowk",
     "PG in Sector 69 Gurgaon",
+    "PG near Genpact Gurgaon",
+    "PG near Vatika Chowk",  
   ].map((item, i) => (
     <span
       key={i}
@@ -68,23 +70,7 @@ export default async function Page({ searchParams }) {
       <Filters />
 
       {/* 🔥 LOCATION CHIPS (SEO BOOST + UX) */}
-      <div className="flex flex-wrap gap-3 mb-8">
-        {[
-          "PG near Genpact Gurgaon",
-          "PG in Badshahpur Gurgaon",
-          "PG near Vatika Chowk",
-          "PG near Subhash Chowk",
-          "PG in Sector 48 Gurgaon",
-          "PG in Sector 69 Gurgaon",
-        ].map((loc, i) => (
-          <span
-            key={i}
-            className="bg-gray-100 hover:bg-blue-50 text-gray-700 px-4 py-2 rounded-full text-sm cursor-pointer transition"
-          >
-            {loc}
-          </span>
-        ))}
-      </div>
+      
 
       {/* 🔥 RESULT HEADING */}
       <h2 className="text-xl font-semibold mb-4">
