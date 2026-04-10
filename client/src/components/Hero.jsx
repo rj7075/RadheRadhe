@@ -59,27 +59,27 @@ export default function Hero() {
 
        
 
-<div className="flex justify-center gap-4 mt-8 flex-wrap text-sm">
+          <div className="flex justify-center gap-4 mt-8 md:pb-1 flex-wrap text-sm">
 
-  {/* Verified */}
-  <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
-    <MdVerified className="text-blue-400 text-lg" />
-    <span className="text-white font-medium">Verified Listings</span>
-  </div>
+            {/* Verified */}
+            <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
+              <MdVerified className="text-blue-400 text-lg" />
+              <span className="text-white font-medium">Verified Listings</span>
+            </div>
 
-  {/* No Brokerage */}
-  <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
-    <FaMoneyBillWave className="text-green-400 text-lg" />
-    <span className="text-white font-medium">No Brokerage</span>
-  </div>
+            {/* No Brokerage */}
+            <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
+              <FaMoneyBillWave className="text-green-400 text-lg" />
+              <span className="text-white font-medium">No Brokerage</span>
+            </div>
 
-  {/* Instant Booking */}
-  <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
-    <FiZap className="text-yellow-300 text-lg" />
-    <span className="text-white font-medium">Instant Booking</span>
-  </div>
+            {/* Instant Booking */}
+            <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/20 transition">
+              <FiZap className="text-yellow-300 text-lg" />
+              <span className="text-white font-medium">Instant Booking</span>
+            </div>
 
-</div>
+          </div>
 
       </div>
     </section>
