@@ -1,6 +1,7 @@
 import data from "@/data/pgs.json";
 import PGList from "@/components/PGList";
 import Filters from "@/components/Filters";
+import { Suspense } from "react";
 
 export default async function Page({ searchParams }) {
   const params = await searchParams;
@@ -67,7 +68,9 @@ export default async function Page({ searchParams }) {
 </div>
 
       {/* 🔥 FILTERS */}
-      <Filters />
+      <Suspense fallback={<div>Loading filters...</div>}>
+    <Filters />
+  </Suspense>
 
       {/* 🔥 LOCATION CHIPS (SEO BOOST + UX) */}
       
