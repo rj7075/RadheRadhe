@@ -1,8 +1,58 @@
+"use client"
 import Map from "@/components/Map";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useState } from "react";
+import toast from "react-hot-toast";
+
+
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    location: "",
+    requirement: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formURL =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdI8IsNvhIeqAfJ827SBe9h3rF6E2K2cPxIAh_S9YM4gWAxAw/formResponse";
+
+    const formBody = new FormData();
+    formBody.append("entry.1041701266", formData.name);        // Name
+    formBody.append("entry.618747833", formData.phone);       // Phone
+    formBody.append("entry.1248971333", formData.location);    // Location
+    formBody.append("entry.1590349924", formData.requirement); // Requirement
+
+    fetch(formURL, {
+      method: "POST",
+      body: formBody,
+      mode: "no-cors", // IMPORTANT
+    })
+      .then(() => {
+        toast.success("Form submitted successfully!");
+        setFormData({
+          name: "",
+          phone: "",
+          location: "",
+          requirement: "",
+        });
+      })
+      .catch(() => {
+        toast.error("Something went wrong!");
+      });
+  };
+
   return (
     <main className="bg-black text-white min-h-screen">
 
@@ -72,27 +122,39 @@ export default function Contact() {
             Get PG Suggestions Instantly
           </h2>
 
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
 
             <input
+              name="name" 
+              onChange={handleChange}
+              value={formData.name}
               type="text"
               placeholder="Your Name"
               className="w-full bg-transparent border border-white/20 p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
             />
 
             <input
+              name="phone" 
+              onChange={handleChange}
+              value={formData.phone} // ❌ you had name here before
               type="tel"
               placeholder="Phone Number"
               className="w-full bg-transparent border border-white/20 p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
             />
 
             <input
+              name="location" 
+              onChange={handleChange}
+              value={formData.location}
               type="text"
               placeholder="Preferred Location (e.g. Sector 48)"
               className="w-full bg-transparent border border-white/20 p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
             />
 
             <textarea
+              name="requirement" 
+              onChange={handleChange}
+              value={formData.requirement}
               placeholder="Your Requirement (Budget, Food, AC, etc.)"
               className="w-full bg-transparent border border-white/20 p-3 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
               rows="4"
@@ -100,10 +162,11 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-3 rounded-lg font-semibold hover:scale-[1.02] transition"
+              className="w-full bg-gradient-to-r cursor-pointer from-blue-500 to-cyan-400 text-white py-3 rounded-lg font-semibold hover:scale-[1.02] transition"
             >
               Get PG Suggestions
             </button>
+
           </form>
         </div>
 

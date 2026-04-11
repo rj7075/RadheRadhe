@@ -41,7 +41,7 @@ export default function Filters() {
             <button
               key={f.value}
               onClick={() => handleFilter(f.value)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border
+              className={`flex items-center gap-2 px-5 cursor-pointer py-2.5 rounded-full text-sm font-medium transition-all duration-300 border
               
               ${
                 isActive
@@ -59,17 +59,11 @@ export default function Filters() {
         {/* 🔥 Clear Filter */}
         {activeGender && (
           <button
-  onClick={clearFilter}
-  className="px-5 py-2 text-sm font-medium rounded-full 
-             bg-gradient-to-br from-black via-gray-900 to-black 
-             text-red-400 border border-gray-700
-             shadow-md hover:shadow-red-500/20
-             hover:text-red-300 hover:border-red-500/40
-             transition-all duration-300 ease-in-out
-             backdrop-blur-md"
->
-  Clear
-</button>
+            onClick={clearFilter}
+            className="px-4 py-2 text-sm cursor-pointer text-red-400 hover:text-red-300 underline"
+          >
+            Clear
+          </button>
         )}
 
       </div>

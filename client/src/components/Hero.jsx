@@ -1,10 +1,12 @@
 import { MdVerified } from "react-icons/md";
 import { FaMoneyBillWave } from "react-icons/fa";
 import { FiZap } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Hero() {
+ 
   return (
-    <section className="relative w-full min-h-[100vh] flex items-center  justify-center text-center text-white overflow-hidden px-3 sm:px-4">
+    <section className="relative w-full min-h-[90vh] flex items-center  justify-center text-center text-white overflow-hidden px-3 sm:px-4">
       
       {/* 🔥 Background */}
       <div className="absolute inset-0">
@@ -55,9 +57,13 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="mt-6 sm:mt-8">
-          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-cyan-400 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg font-semibold shadow-lg hover:scale-105 transition">
+          <Link href="/pg">
+          <button
+          
+           className="w-full cursor-pointer sm:w-auto bg-gradient-to-r from-blue-500 to-cyan-400 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-lg font-semibold shadow-lg hover:scale-105 transition">
             Browse PG Listings
           </button>
+          </Link>
         </div>
 
         {/* 🔥 Features */}
