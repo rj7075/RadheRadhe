@@ -3,6 +3,15 @@ import PGList from "@/components/PGList";
 import Filters from "@/components/Filters";
 import { Suspense } from "react";
 
+
+export const metadata = {
+  title:
+    "Best PG in Gurgaon Near Genpact | Sector 48, Badshahpur & Vatika Chowk PG Rooms",
+  
+  description:
+    "Looking for PG in Gurgaon near Genpact or Sohna Road? Find affordable PG in Sector 48, 38 & Badshahpur with meals, WiFi, AC rooms & zero brokerage. Book now for best deals.",
+};
+
 export default async function Page({ searchParams }) {
   const params = await searchParams;
   const gender = params?.gender;

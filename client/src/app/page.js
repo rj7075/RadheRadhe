@@ -8,9 +8,11 @@ import { Suspense } from "react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Best PG in Gurgaon | Boys, Girls & Unisex PG Near Sohna Road",
+  title:
+    "Best PG in Gurgaon Sector 48 & Sohna Road | Near Genpact, Vatika Chowk & Subhash Chowk",
+
   description:
-    "Find verified PGs in Gurgaon near Sector 48, Sohna Road & Badshahpur. Affordable boys & girls PG with food, WiFi & zero brokerage.",
+    "Find verified PG in Gurgaon near Sector 48, Sohna Road & Badshahpur. PG near Genpact, Vatika Chowk & JMD Subhash Chowk with food, WiFi & zero brokerage. Boys, girls & unisex PG available at affordable prices.",
 };
 
 export default function Home() {
@@ -77,53 +79,73 @@ export default function Home() {
 
           {/* LEFT */}
           <div>
-            <h2 className="text-2xl md:text-4xl font-bold leading-snug">
-              Premium PG in{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                Gurgaon
-              </span>{" "}
-              Near{" "}
-              <span className="text-yellow-400">Sohna Road</span>,{" "}
-              <span className="text-green-400">Sector 48</span> &{" "}
-              <span className="text-pink-400">Badshahpur</span>
-            </h2>
+  <h2 className="text-2xl md:text-4xl font-bold leading-snug">
+    Premium PG in{" "}
+    <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+      Gurgaon
+    </span>{" "}
+    Near{" "}
+    <span className="text-yellow-400">Sohna Road</span>,{" "}
+    <span className="text-green-400">Sector 48</span>,{" "}
+    <span className="text-pink-400">Badshahpur</span> &{" "}
+    <span className="text-blue-400">Sector 38</span>
+  </h2>
 
-            <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
-              Stay directly with owner and explore fully furnished PGs near{" "}
-              <span className="text-blue-400">Subhash Chowk</span>,{" "}
-              <span className="text-cyan-400">Vatika Chowk</span>, and{" "}
-              <span className="text-yellow-400">Genpact</span>. Ideal for professionals & students.
-            </p>
+  <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
+    Discover premium and affordable PG in Gurgaon located near{" "}
+    <span className="text-blue-400">Subhash Chowk</span>,{" "}
+    <span className="text-cyan-400">Vatika Chowk</span>,{" "}
+    <span className="text-yellow-400">Genpact</span>, and{" "}
+    <span className="text-green-400">Sohna Road</span>. Our PG accommodations are perfect for working professionals, students, and corporate employees looking for comfort and convenience.
+  </p>
 
-            <p className="mt-3 text-gray-300 text-sm md:text-base leading-relaxed">
-              Enjoy{" "}
-              <span className="text-green-400">food</span>,{" "}
-              <span className="text-blue-400">WiFi</span>,{" "}
-              <span className="text-purple-400">AC rooms</span>, and{" "}
-              <span className="text-pink-400">security</span>.{" "}
-              <span className="text-yellow-400 font-semibold">
-                Zero brokerage
-              </span>.
-            </p>
+  <p className="mt-3 text-gray-300 text-sm md:text-base leading-relaxed">
+    Choose from fully furnished{" "}
+    <span className="text-purple-400">single, double & triple sharing rooms</span>{" "}
+    with modern amenities like{" "}
+    <span className="text-green-400">healthy meals</span>,{" "}
+    <span className="text-blue-400">high-speed WiFi</span>,{" "}
+    <span className="text-pink-400">AC rooms</span>,{" "}
+    <span className="text-yellow-400">daily housekeeping</span>, and{" "}
+    <span className="text-cyan-400">24/7 security</span>. Enjoy a safe, clean, and comfortable stay with{" "}
+    <span className="text-yellow-400 font-semibold">
+      zero brokerage
+    </span>{" "}
+    and direct owner deals.
+  </p>
 
-            {/* TAGS */}
-            <div className="flex flex-wrap gap-2 mt-6 text-xs md:text-sm">
-              {[
-                "PG near Sohna Road",
-                "PG in Sector 48",
-                "PG in Badshahpur",
-                "PG near Subhash Chowk",
-                "PG near Genpact",
-              ].map((item, i) => (
-                <span
-                  key={i}
-                  className="bg-white/10 border border-white/20 px-3 py-1.5 rounded-full backdrop-blur"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
+  <p className="mt-3 text-gray-300 text-sm md:text-base leading-relaxed">
+    Whether you are searching for{" "}
+    <span className="text-blue-400">boys PG in Gurgaon</span>,{" "}
+    <span className="text-pink-400">girls PG in Gurgaon</span>, or{" "}
+    <span className="text-green-400">unisex PG near Genpact</span>, we offer the best options in prime locations like{" "}
+    <span className="text-yellow-400">Sector 48</span>,{" "}
+    <span className="text-cyan-400">Badshahpur</span>, and{" "}
+    <span className="text-purple-400">Vatika Chowk</span>.
+  </p>
+
+  {/* TAGS */}
+  <div className="flex flex-wrap gap-2 mt-6 text-xs md:text-sm">
+    {[
+      "PG near Sohna Road Gurgaon",
+      "PG in Sector 48 Gurgaon",
+      "PG in Sector 38 Gurgaon",
+      "PG in Badshahpur Gurgaon",
+      "PG near Subhash Chowk",
+      "PG near Vatika Chowk",
+      "PG near Genpact Gurgaon",
+      "Boys PG in Gurgaon",
+      "Girls PG in Gurgaon",
+    ].map((item, i) => (
+      <span
+        key={i}
+        className="bg-white/10 border border-white/20 px-3 py-1.5 rounded-full backdrop-blur"
+      >
+        {item}
+      </span>
+    ))}
+  </div>
+</div>
 
           {/* RIGHT IMAGE */}
           <div className="relative">

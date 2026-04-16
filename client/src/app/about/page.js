@@ -6,9 +6,9 @@ import CTASection from "@/components/CTASection";
 
 
 export const metadata = {
-  title: "About PG Finder | Best PG in Gurgaon",
+  title: "Radhe Radhe PG Gurgaon Sector 48 – Affordable PG Near Genpact & Vatika Chowk",
   description:
-    "Find verified PG in Gurgaon near Sohna Road, Sector 48 & Badshahpur with zero brokerage.",
+    "Book Radhe Radhe PG in Sector 48 Gurgaon near Genpact, Badshahpur & JMD Subhash Chowk. Fully furnished rooms, meals included, safe & budget-friendly stay with zero brokerage.",
 };
 
 export default function AboutPage() {
