@@ -71,7 +71,7 @@ export default function WhyUs() {
 
         {/* 🔥 Trust Line */}
         <p className="mt-10 text-sm text-gray-400">
-          Managed by <span className="text-white font-medium">Rao Ranjeet Yadav</span> • Trusted PG Owner in Gurgaon
+          Managed by <span className="text-white font-medium">Anil Bhaiya & Hemraj</span> • Trusted PG Owner in Gurgaon
         </p>
 
       </div>

@@ -65,9 +65,11 @@ export default function Contact() {
         </h1>
 
         <p className="text-gray-300 mt-4 max-w-2xl mx-auto text-sm md:text-lg">
-          Looking for the best <strong>PG in Gurgaon</strong> near Sohna Road,
-          Sector 48, or Badshahpur? Contact us directly and get instant PG options.
-        </p>
+  Looking for the best <strong>PG in Gurgaon</strong> across top locations like Sohna Road,
+  Sector 38, Sector 48, Sector 69 Badshahpur, Subhash Chowk, and Huda City Centre, 
+  with easy access to nearby landmarks such as Medanta Hospital, Omaxe Gurgaon Mall, and major corporate hubs? 
+  Contact us directly and get instant PG options.
+</p>
 
         <p className="text-sm text-gray-400 mt-3">
           Direct Owner • Zero Brokerage • Instant Response
@@ -78,7 +80,7 @@ export default function Contact() {
       <section className="px-4 md:px-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center py-10">
 
         <a
-          href="https://wa.me/919838692186"
+          href="https://wa.me/918930353588"
           className="bg-white/5 border border-white/10 backdrop-blur-lg p-6 rounded-2xl hover:shadow-2xl transition hover:-translate-y-1"
         >
           <FaWhatsapp className="text-green-400 text-3xl mx-auto mb-3" />
@@ -89,7 +91,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="tel:9838692186"
+          href="tel:8930353588"
           className="bg-white/5 border border-white/10 backdrop-blur-lg p-6 rounded-2xl hover:shadow-2xl transition hover:-translate-y-1"
         >
           <FaPhoneAlt className="text-blue-400 text-3xl mx-auto mb-3" />
@@ -100,7 +102,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="mailto:rj7075yadav@gmail.com"
+          href="mailto:radheradhepg54321@gmail.com"
           className="bg-white/5 border border-white/10 backdrop-blur-lg p-6 rounded-2xl hover:shadow-2xl transition hover:-translate-y-1"
         >
           <MdEmail className="text-red-400 text-3xl mx-auto mb-3" />
@@ -193,34 +195,67 @@ export default function Contact() {
   {/* Content */}
   <div className="relative z-10 max-w-3xl mx-auto">
 
-    <h2 className="text-xl md:text-2xl font-semibold mb-4">
-      PG in Gurgaon Near Sohna Road & Sector 48
-    </h2>
+  <h2 className="text-xl md:text-2xl font-semibold mb-4">
+    PG in Gurgaon Near Sohna Road & Sector 48
+  </h2>
 
-    <p className="text-gray-300 text-sm md:text-base mb-6">
-      Contact us to find the best <strong>PG in Gurgaon</strong> near 
-      Sohna Road, Badshahpur, Sector 48, Subhash Chowk, and Genpact. 
-      We offer direct owner PG with zero brokerage and modern amenities 
-      like food, WiFi, AC rooms, and security.
-    </p>
+ <p className="text-gray-300 text-sm md:text-base mb-6">
+  Contact us to find the best <strong>PG in Gurgaon</strong> across prime locations like 
+  Sohna Road, Sector 38, Sector 48, Sector 69 Badshahpur, Subhash Chowk, and Huda City Centre, 
+  with easy access to nearby landmarks such as Medanta Hospital, Omaxe Gurgaon Mall, and major corporate hubs like Genpact. 
+  We offer direct owner PG with zero brokerage and modern amenities like food, WiFi, AC rooms, and security.
+</p>
 
-    <h3 className="text-2xl md:text-4xl font-bold">
-      Need Help Finding a PG?
-    </h3>
+  <h3 className="text-2xl md:text-4xl font-bold">
+    Need Help Finding a PG?
+  </h3>
 
-    <p className="mt-3 text-gray-100">
-      Chat with us instantly and get the best options
-    </p>
+  <p className="mt-3 text-gray-100">
+    Chat with us instantly and get the best options
+  </p>
 
+  {/* Buttons */}
+  <div className="flex flex-col md:flex-row gap-4 justify-center mt-6">
+
+    {/* WhatsApp 1 */}
     <a
-      href="https://wa.me/919838692186"
-      className="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-3 rounded-full mt-6 font-semibold shadow-lg hover:scale-105 transition"
+      href="https://wa.me/918930353588"
+      target="_blank"
+      className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
     >
       <FaWhatsapp />
-      Chat on WhatsApp
+      WhatsApp 1
+    </a>
+
+    {/* WhatsApp 2 */}
+    <a
+      href="https://wa.me/917297031771"
+      target="_blank"
+      className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+    >
+      <FaWhatsapp />
+      WhatsApp 2
+    </a>
+
+    {/* Call 1 */}
+    <a
+      href="tel:8930353588"
+      className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+    >
+      📞 Call 1
+    </a>
+
+    {/* Call 2 */}
+    <a
+      href="tel:7297031771"
+      className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+    >
+      📞 Call 2
     </a>
 
   </div>
+
+</div>
 
 </section>
 

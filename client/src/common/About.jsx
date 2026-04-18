@@ -134,7 +134,7 @@ export default function AboutContent() {
         <p className="mt-8 text-sm text-gray-400">
           Managed by{" "}
           <span className="text-white font-medium">
-            Rao Ranjeet Yadav
+            Anil Bhaiya & Hemraj
           </span>{" "}
           — Trusted PG Owner in Gurgaon
         </p>

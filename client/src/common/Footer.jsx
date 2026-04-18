@@ -17,9 +17,8 @@ export default function Footer() {
             Radhe Radhe PG
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
-            Find verified and affordable PG in Gurgaon near Sohna Road, Sector 48 
-            & Badshahpur. Comfortable stays for boys, girls & working professionals 
-            with zero brokerage.
+Find verified and affordable PG in Gurgaon across prime locations like Sector 38, Sector 48, Sector 69 Badshahpur, Sohna Road, Subhash Chowk, Huda City Centre, and near Medanta Hospital. Comfortable stays for boys, girls & working professionals with modern amenities and zero brokerage.
+
           </p>
         </div>
 
@@ -52,15 +51,21 @@ export default function Footer() {
           <div className="space-y-3 text-sm">
             <p className="flex items-center gap-2">
               <FaPhoneAlt /> 
-              <a href="tel:9838692186" className="hover:text-white">
-                9838692186
+              <a href="tel:8930353588" className="hover:text-white">
+                8930353588
+              </a>
+            </p>
+            <p className="flex items-center gap-2">
+              <FaPhoneAlt /> 
+              <a href="tel:7297031771" className="hover:text-white">
+                7297031771
               </a>
             </p>
 
             <p className="flex items-center gap-2">
               <MdEmail />
               <a href="mailto:rj7075yadav@gmail.com" className="hover:text-white">
-                rj7075yadav@gmail.com
+                radheradhepg54321@gmail.com
               </a>
             </p>
 
@@ -78,7 +83,7 @@ export default function Footer() {
 
       {/* 🔻 BOTTOM BAR */}
       <div className="border-t border-gray-800 text-center py-5 text-sm text-gray-400">
-        © {new Date().getFullYear()} Rao Ranjeet Yadav. All rights reserved.
+        © {new Date().getFullYear()} Radhe Radhe PG. All rights reserved.
       </div>
     </footer>
   );

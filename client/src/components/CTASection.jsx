@@ -25,22 +25,41 @@ export default function CTASection() {
 
         {/* Subtext */}
         <p className="mt-4 text-gray-300 text-sm sm:text-base">
-          Stay directly with owner near{" "}
+          Stay directly with owner across top locations like{" "}
           <span className="text-blue-400">Sohna Road</span>,{" "}
-          <span className="text-green-400">Sector 48</span> &{" "}
-          <span className="text-yellow-400">Genpact</span>.  
+          <span className="text-green-400">Sector 38</span>,{" "}
+          <span className="text-yellow-400">Sector 48</span>,{" "}
+          <span className="text-pink-400">Sector 69 Badshahpur</span>,{" "}
+          <span className="text-cyan-400">Subhash Chowk</span>, and near{" "}
+          <span className="text-indigo-400">Medanta Hospital</span> &{" "}
+          <span className="text-orange-400">Genpact</span>.  
           No brokerage • Verified rooms • Instant booking.
         </p>
 
-        {/* 🔥 CTA BUTTON */}
-        <a
-          href="https://wa.me/919838692186"
-          target="_blank"
-          className="inline-flex items-center justify-center gap-3 mt-7 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
-        >
-          <FaWhatsapp className="text-xl" />
-          Chat on WhatsApp
-        </a>
+        {/* 🔥 CTA BUTTONS */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-7">
+
+          {/* WhatsApp 1 */}
+          <a
+            href="https://wa.me/918930353588"
+            target="_blank"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
+          >
+            <FaWhatsapp className="text-xl" />
+            Chat on WhatsApp 1
+          </a>
+
+          {/* WhatsApp 2 */}
+          <a
+            href="https://wa.me/917297031771"
+            target="_blank"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
+          >
+            <FaWhatsapp className="text-xl" />
+            Chat on WhatsApp 2
+          </a>
+
+        </div>
 
         {/* Trust Line */}
         <p className="text-xs text-gray-400 mt-4">
