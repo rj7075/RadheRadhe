@@ -87,8 +87,10 @@ export default function Home() {
     Near{" "}
     <span className="text-yellow-400">Sohna Road</span>,{" "}
     <span className="text-green-400">Sector 48</span>,{" "}
+    <span className="text-green-600">Sector 69</span>{" "}
     <span className="text-pink-400">Badshahpur</span> &{" "}
-    <span className="text-blue-400">Sector 38</span>
+    <span className="text-blue-400">Sector 38</span>{" "}
+    
   </h2>
 
   <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
