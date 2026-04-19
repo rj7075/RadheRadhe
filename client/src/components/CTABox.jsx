@@ -16,16 +16,45 @@ export default function CTABox({ pg }) {
         🔥 Only {pg.availableBeds} beds left!
       </p>
 
-      <button className="w-full bg-blue-600 text-white py-3 rounded mt-4 font-semibold">
-        Book Visit
-      </button>
+      {/* Call - Phone 1 */}
+<a
+  href={`tel:+91${pg.phone1}`}
+  className="w-full block text-center bg-blue-600 text-white py-3 rounded mt-4 font-semibold"
+>
+  Call Now +91 {pg.phone1}
+</a>
 
-      <a
-        href={`https://wa.me/91${pg.phone}`}
-        className="w-full block text-center bg-green-500 text-white py-3 rounded mt-3 font-semibold"
-      >
-        WhatsApp Now
-      </a>
+{/* Call - Phone 2 */}
+{pg.phone2 && (
+  <a
+    href={`tel:+91${pg.phone2}`}
+    className="w-full block text-center bg-blue-700 text-white py-3 rounded mt-3 font-semibold"
+  >
+    Call Now  +91 {pg.phone2}
+  </a>
+)}
+
+{/* WhatsApp - Phone 1 */}
+<a
+  href={`https://wa.me/91${pg.phone1}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full block text-center bg-green-500 text-white py-3 rounded mt-3 font-semibold"
+>
+  WhatsApp 1
+</a>
+
+{/* WhatsApp - Phone 2 */}
+{pg.phone2 && (
+  <a
+    href={`https://wa.me/91${pg.phone2}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full block text-center bg-green-600 text-white py-3 rounded mt-3 font-semibold"
+  >
+    WhatsApp 2
+  </a>
+)}
 
       <p className="text-xs text-gray-500 mt-3 text-center">
         No brokerage • Instant booking
