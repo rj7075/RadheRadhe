@@ -152,7 +152,7 @@ export default function Home() {
           {/* RIGHT IMAGE */}
           <div className="relative">
             <img
-              src="/img1.jpg"
+              src="/sector69.jpeg"
               alt="Premium PG in Gurgaon"
               className="rounded-2xl shadow-2xl w-full h-[260px] sm:h-[320px] md:h-[400px] object-cover"
             />
