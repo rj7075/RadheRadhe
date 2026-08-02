@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,9 +14,29 @@ export default function Footer() {
         
         {/* 🏠 BRAND */}
         <div>
-          <h2 className="text-2xl font-bold text-white">
-            Radhe Radhe PG
-          </h2>
+           <Link
+  href="/"
+  className="flex items-center gap-3"
+>
+  <Image
+    src="/logoradhe.png"
+    alt="Radhe Radhe PG"
+    width={250}
+    height={100}
+    className="w-50 h-20 md:w-50 md:h-20 object-contain drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
+  />
+
+  {/* <div>
+    <h1 className="text-xl md:text-2xl font-bold text-white leading-none">
+      Radhe Radhe
+    </h1>
+
+    <p className="text-sm text-[#D4AF37] tracking-wide">
+      PG
+    </p>
+  </div> */}
+</Link>
+          
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
 Find verified and affordable PG in Gurgaon across prime locations like Sector 38, Sector 48, Sector 69 Badshahpur, Sohna Road, Subhash Chowk, Huda City Centre, and near Medanta Hospital. Comfortable stays for boys, girls & working professionals with modern amenities and zero brokerage.
 

@@ -3,6 +3,7 @@ import Navbar from "@/common/Navbar";
 import "./globals.css";
 import Footer from "@/common/Footer";
 import { Toaster } from "react-hot-toast";
+import FloatingContact from "@/common/FloatingContact";
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <Toaster position="top-right" reverseOrder={false} />
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );

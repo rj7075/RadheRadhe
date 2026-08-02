@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,15 +14,24 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-white/10 shadow-md">
+    <nav className="sticky top-0 z-50 bg-[#0F172A] backdrop-blur-md border-b border-white/10 shadow-md">
       
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-2 flex justify-between items-center">
         
         {/* 🔥 Logo */}
         <h1 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-          <Link href={"/"}>
-          Radhe Radhe PG
-          </Link>
+        <Link
+  href="/"
+  className="flex items-center gap-3"
+>
+  <Image
+    src="/logoradhe.png"
+    alt="Radhe Radhe PG"
+    width={250}
+    height={80}
+    className="w-50 h-18 md:w-50 md:h-18 object-contain drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
+  />
+</Link>
         </h1>
 
         {/* 🔥 Desktop Menu */}
