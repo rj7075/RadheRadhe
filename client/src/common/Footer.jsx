@@ -26,15 +26,7 @@ export default function Footer() {
     className="w-50 h-20 md:w-50 md:h-20 object-contain drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
   />
 
-  {/* <div>
-    <h1 className="text-xl md:text-2xl font-bold text-white leading-none">
-      Radhe Radhe
-    </h1>
-
-    <p className="text-sm text-[#D4AF37] tracking-wide">
-      PG
-    </p>
-  </div> */}
+  
 </Link>
           
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
@@ -76,16 +68,10 @@ Find verified and affordable PG in Gurgaon across prime locations like Sector 38
                 8930353588
               </a>
             </p>
-            <p className="flex items-center gap-2">
-              <FaPhoneAlt /> 
-              <a href="tel:7297031771" className="hover:text-white">
-                7297031771
-              </a>
-            </p>
 
             <p className="flex items-center gap-2">
               <MdEmail />
-              <a href="mailto:rj7075yadav@gmail.com" className="hover:text-white">
+              <a href="mailto:radheradhepg54321@gmail.com" className="hover:text-white">
                 radheradhepg54321@gmail.com
               </a>
             </p>

@@ -220,17 +220,7 @@ export default function Contact() {
               className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
               <FaWhatsapp />
-              WhatsApp 1
-            </a>
-
-            {/* WhatsApp 2 */}
-            <a
-              href="https://wa.me/917297031771"
-              target="_blank"
-              className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
-            >
-              <FaWhatsapp />
-              WhatsApp 2
+              WhatsApp 
             </a>
 
             {/* Call 1 */}
@@ -238,15 +228,7 @@ export default function Contact() {
               href="tel:8930353588"
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
-              📞 Call 1
-            </a>
-
-            {/* Call 2 */}
-            <a
-              href="tel:7297031771"
-              className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
-            >
-              📞 Call 2
+              📞 Call 
             </a>
           </div>
         </div>

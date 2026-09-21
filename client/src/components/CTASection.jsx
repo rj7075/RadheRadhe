@@ -46,18 +46,10 @@ export default function CTASection() {
             className="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
           >
             <FaWhatsapp className="text-xl" />
-            Chat on WhatsApp 1
+            Chat on WhatsApp 
           </a>
 
-          {/* WhatsApp 2 */}
-          <a
-            href="https://wa.me/917297031771"
-            target="_blank"
-            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-lg font-semibold shadow-xl hover:scale-105 transition"
-          >
-            <FaWhatsapp className="text-xl" />
-            Chat on WhatsApp 2
-          </a>
+         
 
         </div>
 
