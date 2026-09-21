@@ -25,7 +25,7 @@ export default function CTABox({ pg }) {
 </a>
 
 
-
+{/* Phone Number 2 has been removed */}
 
 {/* WhatsApp - Phone 1 */}
 <a
